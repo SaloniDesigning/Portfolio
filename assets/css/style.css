@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	padding: 20px;
+}
+
+/* ==========================================================================
+								VARIABLES
+========================================================================== */
+
+:root {
+	--primary: #5476CD;
+	--secondary: #FFF84D;
+	--bebas-font: "Bebas Neue", sans-serif;
+	--poppins-font: "Poppins", sans-serif;
+}
+
+header {
+	padding: 30px 40px 30px 40px;
+	background-color: var(--primary);
+	font-family: var(--bebas-font);
+	font-weight: 400;
+	font-style: normal;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav {
+	color: #fff;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+header nav ul li {
+	list-style: none;
+	font-size: 24px;
+	text-transform: uppercase;
+
+}
+
+header nav ul li:hover {
+	color: var(--secondary);
+	cursor: pointer;
+}
+
+.hire_btn {
+	padding: 15px 30px;
+	border-radius: 50px;
+	color: #383125;
+	display: inline;
+	background-color: var(--secondary);
+	outline: none;
+	border: none;
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: 600;
+	font-family: var(--bebas-font);
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+}
+
+.ph-arrow-up-right {
+	display: inline-block;
+	transition: transform 0.3s ease;
+	transform-origin: center;
+}
+
+/* .hire_btn:hover {
+	text-decoration: underline;
+} */
+
+.hire_btn:hover .ph-arrow-up-right {
+	transform: rotate(45deg);
+}
+
+/* underline that animates */
+.hire_btn::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	/* Start hidden */
+	height: 2px;
+	background: #383125;
+	transition: width 0.3s ease;
+}
+
+/* on hover expand underline */
+.hire_btn:hover::after {
+	width: 100%;
+}
