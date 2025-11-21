@@ -10,6 +10,7 @@ html {
 
 body {
 	padding: 20px;
+	letter-spacing: 1.5px;
 }
 
 /* ==========================================================================
@@ -35,7 +36,7 @@ header {
 }
 
 header nav {
-	color: #fff;
+	color: #ffffff;
 }
 
 header nav ul {
@@ -81,28 +82,61 @@ header nav ul li:hover {
 	transform-origin: center;
 }
 
-/* .hire_btn:hover {
-	text-decoration: underline;
-} */
-
 .hire_btn:hover .ph-arrow-up-right {
 	transform: rotate(45deg);
 }
 
-/* underline that animates */
-.hire_btn::after {
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 0;
-	/* Start hidden */
-	height: 2px;
-	background: #383125;
-	transition: width 0.3s ease;
+.hire_btn:hover {
+	text-decoration: underline;
 }
 
-/* on hover expand underline */
-.hire_btn:hover::after {
-	width: 100%;
+/* ==========================================================================
+							Hero Section
+========================================================================== */
+
+.hero_sec {
+	padding: 0 40px 90px;
+	background-color: var(--primary);
+	color: #ffffff;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+/* .hero_frame {
+	background: transparent;
+	border: 10px solid black;
+	border-radius: 25px;
+} */
+
+.hero_left_sec h1 {
+	margin: 100px 0 200px 0;
+	font-family: var(--bebas-font);
+	font-size: 100px;
+}
+
+.hero_left_sec .intro {
+	max-width: 372px;
+}
+
+.hero_left_sec .intro h2 {
+	font-family: var(--bebas-font);
+	font-size: 32px;
+}
+
+.hero_left_sec .intro p {
+	font-family: var(--poppins-font);
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.hero_right_sec {
+	text-align: end;
+}
+
+.hero_right_sec h2 {
+	font-family: var(--bebas-font);
+	letter-spacing: 1px;
+	font-weight: 550;
 }
