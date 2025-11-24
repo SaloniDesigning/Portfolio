@@ -25,7 +25,7 @@ body {
 }
 
 header {
-	padding: 30px 40px 30px 40px;
+	padding: 20px 40px 20px 40px;
 	background-color: var(--primary);
 	font-family: var(--bebas-font);
 	font-weight: 400;
@@ -102,11 +102,17 @@ header nav ul li:hover {
 	grid-template-columns: 50% 50%;
 }
 
-/* .hero_frame {
+.hero_frame {
 	background: transparent;
 	border: 10px solid black;
 	border-radius: 25px;
-} */
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: -1;
+}
 
 .hero_left_sec h1 {
 	margin: 100px 0 200px 0;
@@ -132,11 +138,39 @@ header nav ul li:hover {
 }
 
 .hero_right_sec {
-	text-align: end;
+	display: flex;
+	justify-content: end;
 }
 
 .hero_right_sec h2 {
 	font-family: var(--bebas-font);
 	letter-spacing: 1px;
 	font-weight: 550;
+}
+
+.hero_right_sec .social_sec {
+	max-width: 320px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.hero_right_sec .social_sec p {
+	font-family: var(--poppins-font);
+	font-size: 18px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.hero_right_sec .social_sec ul {
+	display: flex;
+	gap: 5px;
+}
+
+.hero_right_sec .social_sec ul li {
+	list-style: none;
+	padding: 10px;
+	border: 1px solid #FFF;
+	border-radius: 50%;
+	cursor: pointer;
 }
