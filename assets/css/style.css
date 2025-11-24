@@ -139,10 +139,17 @@ header nav ul li:hover {
 
 .hero_right_sec {
 	display: flex;
-	justify-content: end;
+	flex-direction: column;
+	justify-content: right;
+	align-items: end;
 }
 
-.hero_right_sec h2 {
+.hero_right_sec .tech_head h2 {
+	font-family: var(--bebas-font);
+	font-size: 130px;
+}
+
+.hero_right_sec .social_sec h2 {
 	font-family: var(--bebas-font);
 	letter-spacing: 1px;
 	font-weight: 550;
@@ -153,6 +160,7 @@ header nav ul li:hover {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
+	margin: 100px 0 150px 0;
 }
 
 .hero_right_sec .social_sec p {
