@@ -122,7 +122,7 @@ header nav ul li:hover {
 	left: 0;
 	height: 100vh;
 	width: 100%;
-	z-index: 10;
+	/* z-index: 10; */
 }
 
 .hero_left_sec h1 {
@@ -200,11 +200,36 @@ header nav ul li:hover {
 
 .enq_sec {
 	background-color: #FFF;
+	padding: 50px 0;
 }
 
 .enq_sec h2 {
 	font-family: var(--bebas-font);
-	font-size: 120px;
+	font-size: 170px;
+}
+
+
+.enq_sec .enq_bottom_sec {
+	display: grid;
+	grid-template-columns: 20% 30% 50%;
+}
+
+.enq_sec .enq_bottom_sec .hire_btn {
+	max-height: fit-content;
+	max-width: fit-content;
+	align-self: self-end;
+	justify-self: end;
+	margin-right: 40px;
+}
+
+.enq_sec .enq_bottom_sec p {
+	font-family: var(--poppins-font);
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #717171;
+	align-self: center;
+	justify-content: center;
+	margin-top: 70px;
 }
 
 /* ==========================================================================
